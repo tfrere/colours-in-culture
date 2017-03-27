@@ -10,7 +10,7 @@ Demo: http://codepen.io/tfrere/pen/VpMWwv
 
   import whichCulture   	from 'plugins/coloursInCulture';
 
-  let colorMatch = new whichCulture(colors[index].hex, culture);
+  let colorMatch = new whichCulture("#cccccc");
   colorMatch.init();
   console.log(colorMatch.cultures);
   console.log(colorMatch.name);
