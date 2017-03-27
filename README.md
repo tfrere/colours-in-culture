@@ -1,6 +1,8 @@
 # What is this ?
 
-A pure javascript plugin for retrieve culture meanings for a color.
+A pure javascript plugin to get the culture meanings for a color.
+
+Demo: http://codepen.io/tfrere/pen/VpMWwv
 
 # How to use
 
