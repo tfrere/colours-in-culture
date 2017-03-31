@@ -8,12 +8,30 @@ Demo: http://codepen.io/tfrere/pen/VpMWwv
 
 ```javascript
 
-  import whichCulture   	from 'plugins/coloursInCulture';
+var ColoursInCulture = require("colours-in-culture");
 
-  let colorMatch = new whichCulture("#cccccc");
-  colorMatch.init();
-  console.log(colorMatch.cultures);
-  console.log(colorMatch.name);
+var result = new ColoursInCulture.getCultureColorFeelings("#7c7b7a", "japanese");
+console.log(JSON.stringify(result, null, 4));
+
+/**
+ * Outputs :
+ *
+ * {
+ *   closestColor: {
+ *     hex: "#7c7b7a",
+ *     name: "grey"
+ *   },
+ *   cultureFeelings: [
+ *      "staid,
+ *      "intelligence",
+ *      "reliability",
+ *      "old age",
+ *      "conservative",
+ *      "modesty"
+ *    ]
+ *  }
+ */
+
 
 ```
 
