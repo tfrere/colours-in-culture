@@ -1,12 +1,15 @@
 Colours in culture
 =====================
 
+
 A pure javascript plugin to get the culture meanings for a color.
 
-[Demo codepen](http://codepen.io/tfrere/pen/VpMWwv)
+[Codepen demo](http://codepen.io/tfrere/pen/VpMWwv)
+
 
 HOW TO USE
 ------------
+
 
 ```javascript
 
@@ -37,8 +40,10 @@ console.log(JSON.stringify(result, null, 4));
 
 ```
 
-Sources
+
+SOURCES
 ------------
+
 
 This is based on the excellent [work](http://www.informationisbeautiful.net/visualizations/colours-in-cultures/) of David McCandless
 
@@ -49,3 +54,13 @@ This is based on the excellent [work](http://www.informationisbeautiful.net/visu
 * [ColorMatters](http://www.colormatters.com/search.html)
 * [BrandCurve](http://www.brandcurve.com/color-meanings-around-the-world/)
 * [About](http://webdesign.about.com/od/color/a/bl_colorculture.htm)
+
+
+CONTRIBUTE
+---------------
+
+If you want to add any additional information in the database, feel free to submit a pull request. 
+
+
+
+Released under the MIT [License](http://github.com/tfrere/colours-in-culture/blob/master/LICENCE)
