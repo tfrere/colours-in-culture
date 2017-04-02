@@ -1,10 +1,12 @@
-# What is this ?
+Colours in culture
+=====================
 
 A pure javascript plugin to get the culture meanings for a color.
 
-Demo: http://codepen.io/tfrere/pen/VpMWwv
+[Demo codepen](http://codepen.io/tfrere/pen/VpMWwv)
 
-# How to use
+HOW TO USE
+------------
 
 ```javascript
 
@@ -35,16 +37,15 @@ console.log(JSON.stringify(result, null, 4));
 
 ```
 
-# Sources
+Sources
+------------
 
-This is based on the excellent work of David McCandless
-http://www.informationisbeautiful.net/visualizations/colours-in-cultures/
+This is based on the excellent [work](http://www.informationisbeautiful.net/visualizations/colours-in-cultures/) of David McCandless
 
-The original work document is Here
-https://docs.google.com/spreadsheets/d/1kdEOmMxo-Shy2gGlUpPe_Low3s27ZXIw15hybMmtMDU/edit#gid=0
+* [The original data sheet](https://docs.google.com/spreadsheets/d/1kdEOmMxo-Shy2gGlUpPe_Low3s27ZXIw15hybMmtMDU/edit#gid=0) 
 
-Pantone: Communicating With Colour	http://www.amazon.com/exec/obidos/ASIN/0966638328/titb-20/
-John Gage: Color and Meaning: Art, Science, and Symbolism	http://www.amazon.com/exec/obidos/ASIN/0520226119/titb-20/
-ColorMatters	http://www.colormatters.com/search.html
-BrandCurve	http://www.brandcurve.com/color-meanings-around-the-world/
-About	http://webdesign.about.com/od/color/a/bl_colorculture.htm
+* [Pantone: Communicating With Colour](http://www.amazon.com/exec/obidos/ASIN/0966638328/titb-20/)
+* [John Gage: Color and Meaning: Art, Science, and Symbolism](http://www.amazon.com/exec/obidos/ASIN/0520226119/titb-20/)
+* [ColorMatters](http://www.colormatters.com/search.html)
+* [BrandCurve](http://www.brandcurve.com/color-meanings-around-the-world/)
+* [About](http://webdesign.about.com/od/color/a/bl_colorculture.htm)
