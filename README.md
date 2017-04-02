@@ -63,4 +63,4 @@ If you want to add any additional information in the database, feel free to subm
 
 
 
-Released under the MIT [License](http://github.com/tfrere/colours-in-culture/blob/master/LICENCE)
+Released under the MIT [License](https://github.com/tfrere/colours-in-culture/blob/master/LICENSE)
