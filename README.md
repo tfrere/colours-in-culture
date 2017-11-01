@@ -61,6 +61,7 @@ CONTRIBUTE
 
 If you want to add any additional information in the database, feel free to submit a pull request. 
 
+[Data file](https://github.com/tfrere/colours-in-culture/blob/master/data.json)
 
 
 Released under the MIT [License](https://github.com/tfrere/colours-in-culture/blob/master/LICENSE)
