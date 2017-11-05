@@ -1,0 +1,250 @@
+.selectric-wrapper {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  // width: 450px;
+}
+
+
+.selectric-responsive {
+  width: 100%;
+}
+
+.selectric {
+  transform: translateY(14px);
+  border-bottom: 1px dashed #F0F0F0;
+  background: white;
+  position: relative;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.selectric-items {
+  transform: translateY(14px);
+}
+
+$select-size: 38px;
+
+.selectric .label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 25px 0 0px;
+  font-size: 3.6rem;
+  line-height: $select-size;
+  color: #444;
+  height: $select-size;
+  font-family: "Noto Sans";
+  user-select: none;
+  font-weight: 600;
+}
+
+
+@media (min-width: 750px) {
+  .selectric {
+    transform: translateY(17px);
+
+  }
+
+  .selectric label {
+        margin: 0 38px 0 10px;
+  }
+
+  .selectric-items {
+    transform: translateY(17px);
+
+  }
+}
+
+
+.selectric .button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: $select-size;
+  height: $select-size;
+  line-height: $select-size;
+  font-size: $select-size / 2;
+  background-color: white;
+  color: rgba(0,0,0,0.1);
+  text-align: center;
+  transform: translateX(13px);
+  user-select: none;
+}
+
+.selectric-focus .selectric {
+  border-color: #aaaaaa;
+}
+
+.selectric-hover .selectric {
+  border-color: #c4c4c4;
+}
+
+.selectric-hover .selectric .button {
+  color: #444;
+}
+
+.selectric-hover .selectric .button:after {
+  border-top-color: #FAFAFA;
+}
+
+.selectric-open {
+  z-index: 9999;
+}
+
+.selectric-open .selectric {
+  border-color: #c4c4c4;
+}
+
+.selectric-open .selectric-items {
+  display: block;
+}
+
+.selectric-disabled {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default;
+  user-select: none;
+}
+
+.selectric-hide-select {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.selectric-hide-select select {
+  position: absolute;
+  left: -100%;
+}
+
+.selectric-hide-select.selectric-is-native {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.selectric-hide-select.selectric-is-native select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+  z-index: 1;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.selectric-input {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  outline: none !important;
+  border: none !important;
+  background: none !important;
+}
+
+.selectric-temp-show {
+  position: absolute !important;
+  visibility: hidden !important;
+  display: block !important;
+}
+
+/* Items box */
+.selectric-items {
+  display: none;
+  position: absolute;
+  width: 360px!important;
+  top: 100%;
+  left: 0;
+  background: #F8F8F8;
+  border: 1px solid #fafafa;
+  z-index: -1;
+  box-shadow: 0 0 10px -6px;
+  font-family: "Noto Sans";
+
+}
+
+.selectric-items .selectric-scroll {
+  height: 100%;
+  overflow: auto;
+}
+
+.selectric-above .selectric-items {
+  top: auto;
+  bottom: 100%;
+}
+
+.selectric-items ul, .selectric-items li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  min-height: 20px;
+}
+
+.selectric-items li {
+  display: block;
+  padding: 10px;
+  color: #666;
+  background: #FFF;
+  cursor: pointer;
+  font-size: 3.6rem;
+  line-height: $select-size;
+  transition: all 200ms ease;
+}
+
+.selectric-items li.selected {
+  color: #444;
+}
+
+.selectric-items li.highlighted {
+  background: #FAFAFA;
+  color: #444;
+}
+
+.selectric-items li:hover {
+  background: #D5D5D5;
+  color: #444;
+}
+
+.selectric-items .disabled {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default !important;
+  background: none !important;
+  color: #666 !important;
+  user-select: none;
+}
+
+.selectric-items .selectric-group .selectric-group-label {
+  font-weight: bold;
+  padding-left: 10px;
+  cursor: default;
+  user-select: none;
+  background: none;
+  color: #444;
+}
+
+.selectric-items .selectric-group.disabled li {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.selectric-items .selectric-group li {
+  padding-left: 25px;
+}

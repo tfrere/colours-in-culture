@@ -1,0 +1,60 @@
+/* # Media queries
+
+    Markup
+
+	//   @include phone {
+	//	   your css here
+	//   }
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+	$mobile-width: 400px;
+	$phablet-width: 550px;
+	$tablet-width: 750px;
+	$desktop-width: 1000px;
+	$hd-width: 1200px;
+
+
+	@mixin break-point($media) {
+	    @if $media == mobile {
+	        @media (min-width: #{$mobile-width}) {
+	            @content;
+	        }
+	    }
+	    @else if $media == phablet {
+	        @media (min-width: #{$phablet-width}) {
+	            @content;
+	        }
+	    }
+	    @else if $media == tablet {
+	        @media (min-width: #{$tablet-width}) {
+	            @content;
+	        }
+	    }
+	    @else if $media == desktop {
+	        @media (min-width: #{$desktop-width}) {
+	            @content;
+	        }
+	    }
+	    @else if $media == hd {
+	        @media (min-width: #{$hd-width}) {
+	            @content;
+	        }
+	    }
+	    @else if $media == retina {
+			@media
+			only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (min--moz-device-pixel-ratio: 2),
+			only screen and (-o-min-device-pixel-ratio: 2/1),
+			only screen and (min-device-pixel-ratio: 2),
+			only screen and (min-resolution: 192dpi),
+			only screen and (min-resolution: 2dppx) {
+	            @content;
+	        }
+	    }
+	    @else if $media == print {
+	        @media print {
+	            @content;
+	        }
+	    }
+	}

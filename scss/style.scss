@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:200,300,400,500,600,700&Noto+Serif:200,300,400,500,600,700");
+
+@import "core/math/math";
+@import "core/media";
+@import "core/ease";
+@import "core/color";
+@import "core/base";
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: #fafafa;
+  // overflow-x:hidden;
+}
+
+body {
+  border: 0px solid #fafafa;
+  background-color: white;
+  padding-bottom: 0px;
+  transition: all 250ms ease("swift-in");
+  &.active {
+    border: 20px solid #fafafa;
+  }
+}
+
+
+
+
+
+@media (min-width: #{$tablet-width}) {
+  body {
+    padding-bottom: 60px;
+  }
+}
+
+.logo {
+  margin: 0;
+  line-height: 2.3;
+}
+
+* {
+  box-sizing: border-box;
+  text-rendering: geometricPrecision;
+}
+
+@import "cards";
+@import "tag";
+@import "select";
+@import "nav";
+@import "footer";

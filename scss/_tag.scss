@@ -1,0 +1,14 @@
+
+.tag {
+  display: inline-block;
+  padding: 2.5px 7.5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 3px;
+  word-break: no-wrap;
+  text-align: center;
+  font-family: "Noto Sans";
+  font-weight: 800;
+  text-rendering: geometricPrecision;
+}

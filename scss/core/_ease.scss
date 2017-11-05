@@ -1,0 +1,20 @@
+// never begin a curve with a 0
+// to fix
+// atan() bug
+$ease: (
+  swift-move:         cubic-bezier(0.4, 0, 0.2, 1),
+  swifter-move:       cubic-bezier(0.4, 0, 0, 1),
+  heavy-move:         cubic-bezier(0.7, 0, 0.6, 1),
+  swift-in:           cubic-bezier(0.1, 0, 0.2, 1),
+  swift-in-bouncy:    cubic-bezier(0.1, 0, 0.11, 1.17),
+  swift-out:          cubic-bezier(0.4, 0, 1, 1)
+);
+
+@function ease($key) {
+  @if map-has-key($ease, $key) {
+    @return map-get($ease, $key);
+  }
+
+  @warn "Unkown '#{$key}' in $ease.";
+  @return null;
+}

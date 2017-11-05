@@ -1,0 +1,369 @@
+
+	@function color($color, $type) {
+	  @if map-has-key($colors, $color) {
+	    $curr_color: map-get($colors, $color);
+	    @if map-has-key($curr_color, $type) {
+	      @return map-get($curr_color, $type);
+	    }
+	  }
+	  @warn "Unknown `#{name}` in $colors.";
+	  @return null;
+	}
+
+  /* # Colors
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  	//048b8d mine
+  	// FF9153 mine 2
+  	// 9f3738 conseil emploi
+  	// 9e2a2c collectivz 1
+  	// 8686bf collectivz 2
+
+  	// rocketcss #048b8d
+  	// complement($color-primary)
+
+  	$color-primary:				#E39242;
+  	$color-complement:		#8c0222;
+
+  	$color-success:				green;
+  	$color-danger:				red;
+  	$color-info:					blue;
+  	$color-warning:				orange;
+
+  	$color-blue:				  #98abbf;
+  	$color-green:					#326550;
+  	$color-yellow:				#F4C430;
+  	$color-brown:					#d0905d;
+  	$color-orange:				#e2681f;
+  	$color-pink:					#f1b6dd;
+  	$color-light:					#f2f2f2;
+
+  	$primary: (
+  	  "lighten-5":  lighten($color-primary, 50%),
+  	  "lighten-4":  lighten($color-primary, 40%),
+  	  "lighten-3":  lighten($color-primary, 30%),
+  	  "lighten-2":  lighten($color-primary, 20%),
+  	  "lighten-1":  lighten($color-primary, 10%),
+  	  "darken-1":   darken($color-primary, 10%),
+  	  "darken-2":   darken($color-primary, 20%),
+  	  "darken-3":   darken($color-primary, 30%),
+  	  "darken-4":   darken($color-primary, 40%),
+      "darken-5":   darken($color-primary, 50%),
+  		"base":       $color-primary
+  	);
+
+  	$complement: (
+  	  "lighten-5":  lighten($color-complement, 50%),
+  	  "lighten-4":  lighten($color-complement, 40%),
+  	  "lighten-3":  lighten($color-complement, 30%),
+  	  "lighten-2":  lighten($color-complement, 20%),
+  	  "lighten-1":  lighten($color-complement, 10%),
+  	  "darken-1":   darken($color-complement, 10%),
+  	  "darken-2":   darken($color-complement, 20%),
+  	  "darken-3":   darken($color-complement, 30%),
+  	  "darken-4":   darken($color-complement, 40%),
+      "darken-5":   darken($color-complement, 50%),
+  		"base":       $color-complement
+  	);
+
+  	$success: (
+  	  "lighten-5":  lighten($color-success, 50%),
+  	  "lighten-4":  lighten($color-success, 40%),
+  	  "lighten-3":  lighten($color-success, 30%),
+  	  "lighten-2":  lighten($color-success, 20%),
+  	  "lighten-1":  lighten($color-success, 10%),
+  	  "darken-1":   darken($color-success, 10%),
+  	  "darken-2":   darken($color-success, 20%),
+  	  "darken-3":   darken($color-success, 30%),
+  	  "darken-4":   darken($color-success, 40%),
+      "darken-5":   darken($color-success, 50%),
+  		"base":       $color-success
+  	);
+
+  	$danger: (
+  	  "lighten-5":  lighten($color-danger, 50%),
+  	  "lighten-4":  lighten($color-danger, 40%),
+  	  "lighten-3":  lighten($color-danger, 30%),
+  	  "lighten-2":  lighten($color-danger, 20%),
+  	  "lighten-1":  lighten($color-danger, 10%),
+  	  "darken-1":   darken($color-danger, 10%),
+  	  "darken-2":   darken($color-danger, 20%),
+  	  "darken-3":   darken($color-danger, 30%),
+  	  "darken-4":   darken($color-danger, 40%),
+      "darken-5":   darken($color-danger, 50%),
+  		"base":       $color-danger
+  	);
+
+  	$info: (
+  	  "lighten-5":  lighten($color-info, 50%),
+  	  "lighten-4":  lighten($color-info, 40%),
+  	  "lighten-3":  lighten($color-info, 30%),
+  	  "lighten-2":  lighten($color-info, 20%),
+  	  "lighten-1":  lighten($color-info, 10%),
+  	  "darken-1":   darken($color-info, 10%),
+  	  "darken-2":   darken($color-info, 20%),
+  	  "darken-3":   darken($color-info, 30%),
+  	  "darken-4":   darken($color-info, 40%),
+      "darken-5":   darken($color-info, 50%),
+  		"base":       $color-info
+  	);
+
+  	$warning: (
+  	  "lighten-5":  lighten($color-warning, 50%),
+  	  "lighten-4":  lighten($color-warning, 40%),
+  	  "lighten-3":  lighten($color-warning, 30%),
+  	  "lighten-2":  lighten($color-warning, 20%),
+  	  "lighten-1":  lighten($color-warning, 10%),
+  	  "darken-1":   darken($color-warning, 10%),
+  	  "darken-2":   darken($color-warning, 20%),
+  	  "darken-3":   darken($color-warning, 30%),
+  	  "darken-4":   darken($color-warning, 40%),
+      "darken-5":   darken($color-warning, 50%),
+  		"base":       $color-warning
+  	);
+
+  	$blue: (
+  	  "lighten-5":  lighten($color-blue, 50%),
+  	  "lighten-4":  lighten($color-blue, 40%),
+  	  "lighten-3":  lighten($color-blue, 30%),
+  	  "lighten-2":  lighten($color-blue, 20%),
+  	  "lighten-1":  lighten($color-blue, 10%),
+  	  "darken-1":   darken($color-blue, 10%),
+  	  "darken-2":   darken($color-blue, 20%),
+  	  "darken-3":   darken($color-blue, 30%),
+  	  "darken-4":   darken($color-blue, 40%),
+      "darken-5":   darken($color-blue, 50%),
+  		"base":       $color-blue
+  	);
+
+  	$green: (
+  	  "lighten-5":  lighten($color-green, 50%),
+  	  "lighten-4":  lighten($color-green, 40%),
+  	  "lighten-3":  lighten($color-green, 30%),
+  	  "lighten-2":  lighten($color-green, 20%),
+  	  "lighten-1":  lighten($color-green, 10%),
+  	  "darken-1":   darken($color-green, 10%),
+  	  "darken-2":   darken($color-green, 20%),
+  	  "darken-3":   darken($color-green, 30%),
+  	  "darken-4":   darken($color-green, 40%),
+      "darken-5":   darken($color-green, 50%),
+  		"base":       $color-green
+  	);
+
+  	$yellow: (
+  	  "lighten-5":  lighten($color-yellow, 50%),
+  	  "lighten-4":  lighten($color-yellow, 40%),
+  	  "lighten-3":  lighten($color-yellow, 30%),
+  	  "lighten-2":  lighten($color-yellow, 20%),
+  	  "lighten-1":  lighten($color-yellow, 10%),
+  	  "darken-1":   darken($color-yellow, 10%),
+  	  "darken-2":   darken($color-yellow, 20%),
+  	  "darken-3":   darken($color-yellow, 30%),
+  	  "darken-4":   darken($color-yellow, 40%),
+      "darken-5":   darken($color-yellow, 50%),
+  		"base":       $color-yellow
+  	);
+
+  	$brown: (
+  	  "lighten-5":  lighten($color-brown, 50%),
+  	  "lighten-4":  lighten($color-brown, 40%),
+  	  "lighten-3":  lighten($color-brown, 30%),
+  	  "lighten-2":  lighten($color-brown, 20%),
+  	  "lighten-1":  lighten($color-brown, 10%),
+  	  "darken-1":   darken($color-brown, 10%),
+  	  "darken-2":   darken($color-brown, 20%),
+  	  "darken-3":   darken($color-brown, 30%),
+  	  "darken-4":   darken($color-brown, 40%),
+      "darken-5":   darken($color-brown, 50%),
+  		"base":       $color-brown
+  	);
+
+  	$brown: (
+  	  "lighten-5":  lighten($color-brown, 50%),
+  	  "lighten-4":  lighten($color-brown, 40%),
+  	  "lighten-3":  lighten($color-brown, 30%),
+  	  "lighten-2":  lighten($color-brown, 20%),
+  	  "lighten-1":  lighten($color-brown, 10%),
+  	  "darken-1":   darken($color-brown, 10%),
+  	  "darken-2":   darken($color-brown, 20%),
+  	  "darken-3":   darken($color-brown, 30%),
+  	  "darken-4":   darken($color-brown, 40%),
+      "darken-5":   darken($color-brown, 50%),
+  		"base":       $color-brown
+  	);
+
+  	$orange: (
+  	  "lighten-5":  lighten($color-orange, 50%),
+  	  "lighten-4":  lighten($color-orange, 40%),
+  	  "lighten-3":  lighten($color-orange, 30%),
+  	  "lighten-2":  lighten($color-orange, 20%),
+  	  "lighten-1":  lighten($color-orange, 10%),
+  	  "darken-1":   darken($color-orange, 10%),
+  	  "darken-2":   darken($color-orange, 20%),
+  	  "darken-3":   darken($color-orange, 30%),
+  	  "darken-4":   darken($color-orange, 40%),
+      "darken-5":   darken($color-orange, 50%),
+  		"base":       $color-orange
+  	);
+
+  	$pink: (
+  	  "lighten-5":  lighten($color-pink, 50%),
+  	  "lighten-4":  lighten($color-pink, 40%),
+  	  "lighten-3":  lighten($color-pink, 30%),
+  	  "lighten-2":  lighten($color-pink, 20%),
+  	  "lighten-1":  lighten($color-pink, 10%),
+  	  "darken-1":   darken($color-pink, 10%),
+  	  "darken-2":   darken($color-pink, 20%),
+  	  "darken-3":   darken($color-pink, 30%),
+  	  "darken-4":   darken($color-pink, 40%),
+      "darken-5":   darken($color-pink, 50%),
+  		"base":       $color-pink
+  	);
+
+  	$light: (
+  	  "lighten-5":  lighten($color-light, 50%),
+  	  "lighten-4":  lighten($color-light, 40%),
+  	  "lighten-3":  lighten($color-light, 30%),
+  	  "lighten-2":  lighten($color-light, 20%),
+  	  "lighten-1":  lighten($color-light, 10%),
+  	  "darken-1":   darken($color-light, 10%),
+  	  "darken-2":   darken($color-light, 20%),
+  	  "darken-3":   darken($color-light, 30%),
+  	  "darken-4":   darken($color-light, 40%),
+      "darken-5":   darken($color-light, 50%),
+  		"base":       $color-light
+  	);
+
+  	$grey: (
+  	  "lighten-5":  #fafafa,
+  	  "lighten-4":  #f5f5f5,
+  	  "lighten-3":  #eeeeee,
+  	  "lighten-2":  #e0e0e0,
+  	  "lighten-1":  #bdbdbd,
+  		"base":       #9e9e9e,
+  	  "darken-1":   #757575,
+  	  "darken-2":   #616161,
+  	  "darken-3":   #424242,
+  	  "darken-4":   #212121,
+  	  "darken-5":   black
+  	);
+
+
+  	// 11% each
+  	$subtle-grey: (
+  		"lighten-4":  #F0F0F0, // 6
+  		"lighten-3":  #D4D4D4, // 17
+  		"lighten-2":  #B8B8B8, // 28
+  		"lighten-1":  #9C9C9C, // 39
+  		"base":  			#7F7F7F, // 50
+  		"darken-1":   #636363, // 61
+  		"darken-2":   #474747, // 72
+  		"darken-3":   #2B2B2B, // 83
+  		"darken-4":   #OFOFOF  // 94
+  	);
+
+  	$primary-grey: (
+  	  "lighten-5":  mix($color-primary, #fafafa, 5%),
+  	  "lighten-4":  mix($color-primary, #f5f5f5, 5%),
+  	  "lighten-3":  mix($color-primary, #eeeeee, 5%),
+  	  "lighten-2":  mix($color-primary, #e0e0e0, 5%),
+  	  "lighten-1":  mix($color-primary, #bdbdbd, 5%),
+  		"base":       mix($color-primary, #9e9e9e, 5%),
+  	  "darken-1":   mix($color-primary, #757575, 5%),
+  	  "darken-2":   mix($color-primary, #616161, 5%),
+  	  "darken-3":   mix($color-primary, #424242, 5%),
+  	  "darken-4":   mix($color-primary, #212121, 5%),
+  	  "darken-5":   mix($color-primary, black,  5%)
+  	);
+
+  	$colors: (
+  	  "primary": $primary,
+  		"complement": $complement,
+  		"success": $success,
+  		"danger": $danger,
+  		"warning": $warning,
+  	  "info": $info,
+  	  "blue": $blue,
+  	  "green": $green,
+  		"yellow": $yellow,
+  		"brown": $brown,
+  		"orange": $orange,
+  		"pink": $pink,
+  	  "light": $light,
+  	  "grey": $grey
+  	);
+
+  $medium-grey: #fafafa;
+
+  $facebook-color:    #3b5998;
+  $twitter-color:     #55acee;
+  $googleplus-color:  #dd4b39;
+  $youtube-color: 		#bb0000;
+  $linkedin-color: 		#007bb5;
+  $instagram-color: 	#e95950;
+  $pinterest-color: 	#cb2027;
+  $snapchat-color: 		#fffc00;
+  $dropbox-color: 		#007ee5;
+  $flickr-color: 			#ff0084;
+  $tumblr-color: 			#32506d;
+  $vk-color: 					#45668e;
+  $vimeo-color: 			#aad450;
+  $foursquare-color: 	#0072b1;
+  $spotify-color: 		#00e461;
+  $github-color: 			#000000;
+  $behance-color: 		#1769ff;
+
+  // http://codepen.io/lunelson/pen/jENxwB?editors=0100
+
+  // LINEAR to LOGARITHMIC and vicev-ersa
+
+  @function lin2log($n) { @if $n <= 0.0031308 { @return $n * 12.92; } @else { @return 1.055 * pow($n,1/2.4) - 0.055; } }
+  @function log2lin($n) { @if $n <= 0.04045 { @return $n / 12.92; } @else { @return pow((($n + 0.055)/1.055),2.4); } }
+
+  // sRGB BT-709 BRIGHTNESS
+
+  @function resolve-brightness($c) {
+  	$rlin: log2lin(red($c)/255);
+  	$glin: log2lin(green($c)/255);
+  	$blin: log2lin(blue($c)/255);
+  	@return lin2log(0.2126 * $rlin + 0.7152 * $glin + 0.0722 * $blin) * 100;
+  }
+
+  // Compares contrast of a given color to the light/dark arguments and returns whichever is most "contrasty"
+
+  @function color-contrast($color, $dark: rgb(0,0,0), $light: rgb(255,255,255)) {
+    @if $color == null {
+      @return null;
+    }
+    @else {
+      $color-brightness: resolve-brightness($color);
+      $light-text-brightness: resolve-brightness($light);
+      $dark-text-brightness: resolve-brightness($dark);
+
+      @return if(abs($color-brightness - $light-text-brightness) > abs($color-brightness - $dark-text-brightness), $light, $dark);
+    }
+  }
+
+
+  	// Color Classes
+
+  @each $color_name, $color in $colors {
+    @each $color_type, $color_value in $color {
+      @if $color_type == "base" {
+        ._bg-#{$color_name} {
+          background-color: $color_value !important;
+        }
+        ._text-#{$color_name} {
+          color: $color_value !important;
+        }
+      }
+      @else {
+        ._bg-#{$color_name}-#{$color_type} {
+          background-color: $color_value !important;
+        }
+        ._text-#{$color_name}-#{$color_type} {
+          color: $color_value !important;
+        }
+      }
+    }
+  }

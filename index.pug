@@ -1,0 +1,110 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport" content="width=device-width, user-scalable=no")
+    title Colours-in-culture
+    link(rel='stylesheet', href='css/style.css')
+  body
+    nav.nav
+      h3.logo
+        | colours in
+        select.select#culture-choice
+          option(value='westernAmerican' selected='selected')  westernAmerican 
+          option(value='westernEuropean')  westernEuropean 
+          option(value='southAmerican')  southAmerican 
+          option(value='russia')  russia
+          option(value='india')  india
+          option(value='northAfrica')  northAfrica 
+          option(value='southAfrica')  southAfrica 
+          option(value='muslim')  muslim 
+          option(value='asia')  asia 
+          option(value='chinese')  chinese 
+          option(value='japanese')  japanese 
+          option(value='nativeAmericans')  nativeAmericans 
+        | culture
+      .misc
+        a(target="_blank" href="https://github.com/tfrere/colours-in-culture#sources").
+          Sources
+        a(target="_blank" href="https://github.com/tfrere/colours-in-culture#contribute").
+          Contribute
+        a(target="_blank" href="https://github.com/tfrere/colours-in-culture").
+          <i class="social -gitHub"></i>
+    .cards
+      .card.red
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.orange
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.yellow
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.green
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.white
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.blue
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.purple
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.grey
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.brown
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.pink
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.black
+        .card-box
+          .card-label
+            span.name
+            span.color
+          p.culture
+      .card.indigo
+        .card-box
+          .card-label
+            span.name
+            span.color grey
+          p.culture
+            
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://cdn.rawgit.com/lcdsantos/jQuery-Selectric/master/public/jquery.selectric.min.js')
+    script(src='js/colour-in-culture.js')
+    script(src='js/index.js')

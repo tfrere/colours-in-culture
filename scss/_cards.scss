@@ -1,0 +1,147 @@
+
+$size: 0px;
+
+.cards {
+  margin: 0 $size 0px $size;
+  width: calc(100% - $size / 2);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0;
+  flex: 1 100%;
+  opacity: 0;
+  transition: all 250ms ease("swift-out");
+  transform: translateY(-3px);
+  .culture {
+    color: white;
+    margin:0;
+  }
+}
+
+@for $i from 1 through 12 {
+  .card.active:nth-child(#{$i}) {
+    transition-delay: $i * 50ms;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: #{$tablet-width}) {
+  .cards {
+    margin: 0 80px 0px 80px;
+    width: calc(100% - 160px);
+  }
+  .card {
+    width: calc(50% - 20px);
+    height: 340px;
+    flex: unset;
+    margin: 10px;
+  }
+}
+
+@media (min-width: #{$hd-width}) {
+  .card {
+    width: calc(33.3333333% - 20px);
+    height: 250px;
+    flex: unset;
+    margin: 10px;
+  }
+}
+
+
+.card-box {
+  padding: 50px 15px 15px 15px;
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.white .card-box {
+  border: 1px solid #fafafa;
+}
+
+.card-label {
+  position: absolute;
+  top: 3px;
+  left: 15px;
+  font-size: 3rem;
+  width: calc(100% - 30px);
+  font-family: "Noto Sans";
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgba(240,240,240,0.3);
+  text-shadow: rgba(240,240,240,0.3) 1px 1px;
+  margin: 0;
+  .color {
+    opacity: 0;
+    transition: all 200ms ease;
+    float: right;
+  }
+}
+
+.card:hover {
+  .color {
+    opacity: 1;
+    transition: all 200ms ease;
+  }
+}
+
+.card-box.empty .culture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.card-empty {
+  text-align: center;
+  font-family: "Noto Sans";
+  font-weight: 800;
+  padding: 0;
+  div {
+    font-size: 5rem;
+    text-align: center;
+
+  }
+}
+
+$colors: (
+  "red": #e20613,
+  "orange": #f29101,
+  "yellow": #ffe500,
+  "green": #33aa52,
+  "blue": #4980c0,
+  "purple": #a777b1,
+  "indigo": #4b0082,
+  "brown": #a9713d,
+  "black": #1d1d1b,
+  "white": #ffffff,
+  "pink": #ed7aa2,
+  "grey": #7c7b7a,
+  "gold": #ffe500,
+);
+
+
+@each $color_name, $color in $colors {
+  .#{$color_name} .card-box {
+    .tag {
+      color: rgba(color-contrast($color), 0.8);
+      border: 1px solid rgba(color-contrast($color), 0.2);
+    }
+    .card-label {
+      color: rgba(color-contrast($color), 0.3);
+      text-shadow: $color 1px 1px, rgba(color-contrast($color), 0.1) 2px 2px;
+    }
+    .card-empty {
+      color: rgba(color-contrast($color), 0.5);
+    }
+    background-color: $color !important;
+  }
+}
