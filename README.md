@@ -4,6 +4,8 @@ Colours in culture
 
 A pure javascript plugin to get the culture meanings for a color.
 
+[Demo](https://tfrere.github.io/colours-in-culture/)
+
 [Codepen demo](http://codepen.io/tfrere/pen/VpMWwv)
 
 
