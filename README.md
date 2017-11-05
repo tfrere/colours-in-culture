@@ -2,7 +2,7 @@ Colours in culture
 =====================
 
 
-A pure javascript plugin to get the culture meanings for a color.
+Get the cultural meanings for a given color. 
 
 [Demo](https://tfrere.github.io/colours-in-culture/)
 
