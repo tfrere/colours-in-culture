@@ -61,7 +61,8 @@ This is based on the excellent [work](http://www.informationisbeautiful.net/visu
 CONTRIBUTE
 ---------------
 
-If you want to add any additional information in the database, feel free to submit a pull request. 
+If you want to add any additional information in the database, feel free to send me an e-mail or submit a pull request. 
+There's just one rule, you need to add some sources to your data.
 
 [Data file](https://github.com/tfrere/colours-in-culture/blob/master/data.json)
 
