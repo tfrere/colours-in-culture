@@ -17,8 +17,8 @@ HOW TO USE
 
 var ColoursInCulture = require("colours-in-culture");
 
-var result = new ColoursInCulture.getCultureColorFeelings("#7c7b7a", "japanese");
-console.log(JSON.stringify(result, null, 4));
+var result = ColoursInCulture.getCultureColorFeelings("#7c7b7a", "japanese");
+console.log(result);
 
 /**
  * Outputs :
