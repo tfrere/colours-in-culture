@@ -8,46 +8,26 @@ Based on the excellent [work](http://www.informationisbeautiful.net/visualizatio
 
 ####
 
-- [API](#API)
--- [.getColorList](#get-color-list)
--- [.getClosestColor](#get-closest-color)
--- [.searchByColor](#search-by-color)
--- [.getCultureList](#get-culture-list)
--- [.searchByCulture](#search-by-culture)
--- [.getConceptList](#get-concept-list)
--- [.searchByConcept](#search-by-concept)
--- [.getDominantColorByConcept](#get-dominant-color-by-concept)
---
--- get("color")
--- search("color", "blue")
--- getClosestColor("#000")
--- getDominantColorByConcept("culture")
+* [API](#API)
+	* [.getColorList](#get-color-list)
+	* [.getClosestColor](#get-closest-color)
+	* [.searchByColor](#search-by-color)
+	* [.getCultureList](#get-culture-list)
+	* [.searchByCulture](#search-by-culture)
+	* [.getConceptList](#get-concept-list)
+	* [.searchByConcept](#search-by-concept)
+	* [.getDominantColorByConcept](#get-dominant-color-by-concept)
+	* OR	
+	* get("color")
+	* search("color", "blue")
+	* getClosestColor("#000")
+	* getDominantColorByConcept("culture")
 - [Sources](#sources)
 - [Contribute](#contribute)
 - [License](#license)
 
 ## API
 
-## API
-
- - [.getColorList](#get-color-list)
- - [.getClosestColor](#get-closest-color)
- - [.searchByColor](#search-by-color)
- ######
- - [.getCultureList](#get-culture-list)
- - [.searchByCulture](#search-by-culture)
-######
- - [.getConceptList](#get-concept-list)
- - [.searchByConcept](#search-by-concept)
- - [.getDominantColorByConcept](#get-dominant-color-by-concept)
-  
-  OR
-
-- get("color")
-- search("color", "blue")
-- getClosestColor("#000")
-- getDominantColorByConcept("culture")
-  
 ### Get color list
 **Return** list of all colors in database
 
