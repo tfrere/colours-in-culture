@@ -6,7 +6,42 @@ Based on the excellent [work](http://www.informationisbeautiful.net/visualizatio
 
 [Demo](https://coloursinculture.io) - [Codepen example](http://codepen.io/tfrere/pen/VpMWwv)
 
-####
+
+## HOW TO USE
+
+```javascript
+
+var ColoursInCulture = require("colours-in-culture");
+
+var result = ColoursInCulture.getCultureColorFeelings("#7c7b7a", "japanese");
+console.log(result);
+
+/**
+ * Outputs :
+ *
+ * {
+ *   closestColor: {
+ *     hex: "#7c7b7a",
+ *     name: "grey"
+ *   },
+ *   cultureFeelings: [
+ *      "staid,
+ *      "intelligence",
+ *      "reliability",
+ *      "old age",
+ *      "conservative",
+ *      "modesty"
+ *    ]
+ *  }
+ */
+
+
+```
+
+
+
+
+## Future version ( not yet implemented )
 
 * [API](#API)
 	* [.getColorList](#get-color-list)
