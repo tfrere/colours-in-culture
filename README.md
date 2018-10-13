@@ -2,12 +2,31 @@
 # Colours in culture
 
 Get cultural meanings from all around the world.
-
 Based on the excellent [work](http://www.informationisbeautiful.net/visualizations/colours-in-cultures/) of David McCandless. 
 
-- [Demo](https://coloursinculture.io)
-- [Codepen example](http://codepen.io/tfrere/pen/VpMWwv)
+[Demo](https://coloursinculture.io) - [Codepen example](http://codepen.io/tfrere/pen/VpMWwv)
 
+####
+
+- [API](#API)
+-- [.getColorList](#get-color-list)
+-- [.getClosestColor](#get-closest-color)
+-- [.searchByColor](#search-by-color)
+-- [.getCultureList](#get-culture-list)
+-- [.searchByCulture](#search-by-culture)
+-- [.getConceptList](#get-concept-list)
+-- [.searchByConcept](#search-by-concept)
+-- [.getDominantColorByConcept](#get-dominant-color-by-concept)
+--
+-- get("color")
+-- search("color", "blue")
+-- getClosestColor("#000")
+-- getDominantColorByConcept("culture")
+- [Sources](#sources)
+- [Contribute](#contribute)
+- [License](#license)
+
+## API
 
 ## API
 
