@@ -31,6 +31,7 @@ Based on the excellent [work](http://www.informationisbeautiful.net/visualizatio
   
 ### Get color list
 **Return** list of all colors in database
+
 **Sorted by** count of associated concepts in all cultures
 ```javascript
 api.getColorList() = ["color"]
@@ -42,6 +43,7 @@ api.getColorList() = ["color"]
 ### Get closest color
 
 **Return** closest color found in database from a given hex
+
 **Sorted by** count of associated concepts in all cultures
 ```javascript
 api.getClosestColor("hex") = [["color"]]
@@ -51,7 +53,8 @@ api.getClosestColor("hex") = [["color"]]
 
 ### Search by color
 
-**Return** list of all colors in database
+**Return** list of cultures and their associated concepts
+
 **Sorted by** count of associated concepts in all cultures
 ```javascript
 api.searchByColor("color") = [{"culture": ["concept"]}];
@@ -63,6 +66,7 @@ api.searchByColor("color") = [{"culture": ["concept"]}];
 ### Get culture list
 
 **Return** list of all cultures in database
+
 **Sorted by** count of associated concepts for all colors
 ```javascript
 // sort by : nombre de concepts associés toutes cultures confondues
@@ -74,7 +78,8 @@ api.getCultureList() = ["culture"]
 
 ### Search by culture
 
-**Return** list of 
+**Return** list of colors and their associated concepts
+
 **Sorted by** count of associated concepts for all colors
 ```javascript
 api.searchByCulture("culture") = [{"color": ["concept"]} | null
@@ -86,6 +91,7 @@ api.searchByCulture("culture") = [{"color": ["concept"]} | null
 ### Get concept list
 
 **Return** list of all concepts in database
+
 **Sorted by** count of associated colors for all cultures
 ```javascript
 api.getConceptList() = ["concept"]
@@ -96,7 +102,8 @@ api.getConceptList() = ["concept"]
 
 ### Search by concept
 
-**Return** list of 
+**Return** list of cultures and their associated colors
+
 **Sorted by** count of associated concepts for all colors
 ```javascript
 api.searchByCulture("concept") = [{"culture": ["color"]} | null
