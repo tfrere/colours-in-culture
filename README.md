@@ -68,7 +68,7 @@ console.log(result);
 
 **Sorted by** count of associated concepts in all cultures
 ```javascript
-api.getColorList() = ["color"]
+api.getColorList() -> ["color"]
 
 // Example
 // api.getColorList() = ["blue", "red", "green", ...];
@@ -80,7 +80,7 @@ api.getColorList() = ["color"]
 
 **Sorted by** count of associated concepts in all cultures
 ```javascript
-api.getClosestColor("hex") = [["color"]]
+api.getClosestColor("hex") -> "color"
 // Example
 // api.getClosestColor("mourning") = [{"westernAmerican": ["blue", "red"]}];
 ```
@@ -91,7 +91,7 @@ api.getClosestColor("hex") = [["color"]]
 
 **Sorted by** count of associated concepts in all cultures
 ```javascript
-api.searchByColor("color") = [{"culture": ["concept"]}];
+api.searchByColor("color") -> [{"culture": ["concept"]}];
 
 // Example
 // api.searchByColor("blue") = [{"westernAmerican": ["mourning", "glory"]}];
@@ -105,7 +105,7 @@ api.searchByColor("color") = [{"culture": ["concept"]}];
 ```javascript
 // sort by : nombre de concepts associés toutes cultures confondues
 
-api.getCultureList() = ["culture"]
+api.getCultureList() -> ["culture"]
 // Example
 // api.getCultureList() = ["westernAmerican", "asian"];
 ```
@@ -116,7 +116,7 @@ api.getCultureList() = ["culture"]
 
 **Sorted by** count of associated concepts for all colors
 ```javascript
-api.searchByCulture("culture") = [{"color": ["concept"]} | null
+api.searchByCulture("culture") -> [{"color": ["concept"]} | null
 // Example
 // api.searchByColor("westernAmerican") = [{"blue": ["mourning", "glory"]}];
 ```
@@ -128,7 +128,7 @@ api.searchByCulture("culture") = [{"color": ["concept"]} | null
 
 **Sorted by** count of associated colors for all cultures
 ```javascript
-api.getConceptList() = ["concept"]
+api.getConceptList() -> ["concept"]
 // Example
 // api.getConceptList() = ["love", "passion"]
 ```
@@ -140,7 +140,7 @@ api.getConceptList() = ["concept"]
 
 **Sorted by** count of associated concepts for all colors
 ```javascript
-api.searchByCulture("concept") = [{"culture": ["color"]} | null
+api.searchByCulture("concept") -> [{"culture": ["color"]} | null
 // Example
 // api.searchByColor("mourning") = [{"westernAmerican": ["blue", "red"]}];
 ```
@@ -149,7 +149,7 @@ api.searchByCulture("concept") = [{"culture": ["color"]} | null
 
 **Return** Color that is massively associated to a given concept
 ```javascript
-api.getDominantColorByConcept("concept") = "color" | null
+api.getDominantColorByConcept("concept") -> "color" | null
 // Example
 // api.getDominantColorByConcept("mourning") = [{"westernAmerican": ["blue", "red"]}];
 ```
