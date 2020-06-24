@@ -4,7 +4,7 @@
 Get cultural meanings from all around the world.
 Based on the excellent [work](http://www.informationisbeautiful.net/visualizations/colours-in-cultures/) of David McCandless. 
 
-[Demo](https://coloursinculture.io) - [Codepen example](http://codepen.io/tfrere/pen/VpMWwv)
+[Demo](https://coloursinculture.io)
 
 
 ## HOW TO USE
