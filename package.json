@@ -1,6 +1,6 @@
 {
   "name": "colours-in-culture",
-  "version": "0.1.1",
+  "version": "1.1.0",
   "description": "A simple pure javascript plugin for a better understanding of color meaning in cultures around the world",
   "author": "Thibaud Frere <tfrere@student.42.fr>",
   "main": "index.js",
